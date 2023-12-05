@@ -1,12 +1,13 @@
 <template>
-    <div class="flex items-center justify-center min-h-screen sm:min-h-[calc(100vh-28.8rem)]">
+    <div class="flex items-center justify-center min-h-screen sm:min-h-[calc(100vh-11.3rem)]">
         <div class="container mx-auto">
             <div class="flex justify-center">
                 <!-- Row -->
                 <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                     <!-- Col -->
                     <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
-                        style="background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800')"></div>
+                        style="background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800')">
+                    </div>
                     <!-- Col -->
                     <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
                         <h3 class="pt-4 text-2xl text-center">Create an Account!</h3>

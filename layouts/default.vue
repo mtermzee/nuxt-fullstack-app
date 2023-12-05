@@ -1,12 +1,10 @@
 <template>
-	<div class="flex flex-col min-h-screen">
+	<div class="flex flex-col min-h-screen gap-5">
 		<NavAppHeader />
 
-		<main>
+		<main class="flex-1">
 			<slot />
 		</main>
-
-		<div class="flex-1"></div>
 
 		<NavAppFooter />
 	</div>
