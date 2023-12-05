@@ -5,9 +5,14 @@ On same folder, check blog-posts
 Try the first one npx:
 
 ```bash
+# create app
 npx nuxi@latest init nuxt-fullstack-app
 
 pnpm create nuxt-app@latest nuxt-fullstack-app
+
+# install colorMode
+pnpm install --save-dev @nuxtjs/color-mode
+
 ```
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
