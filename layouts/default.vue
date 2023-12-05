@@ -1,12 +1,12 @@
 <template>
-	<div style="display: flex; min-height: 100vh; flex-direction: column">
+	<div class="flex flex-col min-h-screen">
 		<NavAppHeader />
 
 		<main>
 			<slot />
 		</main>
 
-		<div style="flex-grow: 1"></div>
+		<div class="flex-1"></div>
 
 		<NavAppFooter />
 	</div>

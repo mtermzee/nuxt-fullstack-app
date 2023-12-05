@@ -1,5 +1,5 @@
 <template>
-	<header class="w-full mb-10 text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
+	<header class="w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
 		<div class="container flex flex-col items-start justify-between p-6 mx-auto md:flex-row">
 
 			<div class="flex items-center">
