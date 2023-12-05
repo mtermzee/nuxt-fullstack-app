@@ -1,5 +1,6 @@
 # Nuxt 3 Minimal Starter
 -> npx nuxi@latest init nuxt-fullstack-app
+<br>
 pnpm create nuxt-app@latest nuxt-fullstack-app
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
