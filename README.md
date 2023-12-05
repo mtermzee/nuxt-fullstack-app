@@ -1,6 +1,8 @@
 # Nuxt 3 Minimal Starter
 
-Try the first one npx: 
+On same folder, check blog-posts
+
+Try the first one npx:
 
 ```bash
 npx nuxi@latest init nuxt-fullstack-app
