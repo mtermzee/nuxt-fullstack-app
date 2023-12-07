@@ -13,6 +13,10 @@ pnpm create nuxt-app@latest nuxt-fullstack-app
 # install colorMode
 pnpm install --save-dev @nuxtjs/color-mode
 
+# install prsima
+pnpm add prisma --save-dev
+pnpm add @prisma/client
+
 ```
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -90,3 +94,5 @@ bun run preview
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 Check out the [tailwind installation](https://tailwindcss.com/docs/guides/nuxtjs) for more information.
+
+Check out the [prisma-database](https://www.prisma.io/docs/concepts/overview/prisma-in-your-stack/fullstack) for more information.
