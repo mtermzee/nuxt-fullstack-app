@@ -17,6 +17,12 @@ pnpm install --save-dev @nuxtjs/color-mode
 pnpm add prisma --save-dev
 pnpm add @prisma/client
 
+# make migration prisma
+npx prisma migrate dev
+
+# open prisma studio
+npx prisma studio
+
 ```
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
