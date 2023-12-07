@@ -23,6 +23,10 @@ npx prisma migrate dev
 # open prisma studio
 npx prisma studio
 
+# install bcrypt
+pnpm add bcrypt
+pnpm install --save bcryptjs
+
 ```
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -96,6 +100,8 @@ yarn preview
 # bun
 bun run preview
 ```
+
+Check out the [Nuxt 3 tutorial](https://www.youtube.com/watch?v=A24aKCQ-rf4&ab_channel=FullStackJack) for more information.
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
