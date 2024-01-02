@@ -1,10 +1,11 @@
-import { CompatibilityEvent, sendError } from "h3";
+import { H3Event, sendError } from "h3";
 import bcrypt from "bcryptjs";
 import { IUser } from "~/types/IUser";
+import { createUser } from "~/server/database/repositories/userRespository";
 import { doseUserExist } from "~/services/userService";
 
-export default async (event: CompatibilityEvent) => {
-	const body = await useBody(event);
+export default eventHandler(async (event: H3Event) => {
+	const body = await readBody(event);
 
 	const name = body.name;
 	const username = body.username;
@@ -33,4 +34,4 @@ export default async (event: CompatibilityEvent) => {
 	const user = await createUser(userDate);
 
 	return await makeSession(user, event);
-};
+});

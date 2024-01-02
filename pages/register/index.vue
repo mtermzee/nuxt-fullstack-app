@@ -97,7 +97,6 @@ const user = ref<IUser>({
 
 const register = async () => {
     await registerWithEmail(user.value);
-    console.log(user.value);
 };
 
 </script>
