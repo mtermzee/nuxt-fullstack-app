@@ -79,7 +79,6 @@ export async function getUserById(id: number): Promise<IUser | null> {
 }
 
 export async function createUser(data: IUser) {
-	console.log("test user");
 	const user = await prisma.user.create({
 		data: {
 			username: data.username,

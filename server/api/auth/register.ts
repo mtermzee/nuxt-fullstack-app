@@ -3,6 +3,7 @@ import bcrypt from "bcryptjs";
 import { IUser } from "~/types/IUser";
 import { createUser } from "~/server/database/repositories/userRespository";
 import { doseUserExist } from "~/services/userService";
+import { makeSession } from "~/services/sessionService";
 
 export default eventHandler(async (event: H3Event) => {
 	const body = await readBody(event);
@@ -33,5 +34,17 @@ export default eventHandler(async (event: H3Event) => {
 
 	const user = await createUser(userDate);
 
-	return await makeSession(user, event);
+	if (user) {
+		await makeSession(
+			{
+				id: user.id,
+				name: user.name || "",
+				username: user.username || "",
+				email: user.email,
+				loginType: user.loginType || "",
+			},
+			event
+		);
+	}
+	return user;
 });
